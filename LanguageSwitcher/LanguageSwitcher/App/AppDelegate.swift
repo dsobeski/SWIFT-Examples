@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PokerTracker
+//  LanguageSwitcher
 //
 //  Created by David Sobeski on 6/4/14.
 //  Copyright (c) 2014 osnine. All rights reserved.
