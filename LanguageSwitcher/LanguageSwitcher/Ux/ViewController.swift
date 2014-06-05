@@ -58,7 +58,7 @@ class ViewController: UIViewController, LanguageManagerProtocol
         let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         
         //
-        //  We wantt to regsiter ourselves to listen to language changed events.
+        //  We want to regsiter ourselves to listen to language changed events.
         //
         appDelegate.languageManager.addObserver(self)
         
@@ -193,6 +193,7 @@ class ViewController: UIViewController, LanguageManagerProtocol
         
         //
         //  Based on the tag, we want to set the language.
+        //
         var language : LanguageType!
         
         switch button.tag
