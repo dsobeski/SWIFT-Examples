@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F0C0EC51940C28300DDBA82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0C0EC41940C28300DDBA82 /* Images.xcassets */; };
 		5F6476BF194062FD00C1499D /* LanguageSwitcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6476BE194062FD00C1499D /* LanguageSwitcherTests.swift */; };
 		5F6476DE1940635600C1499D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6476CC1940635600C1499D /* Main.storyboard */; };
-		5F6476DF1940635600C1499D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6476CE1940635600C1499D /* Images.xcassets */; };
 		5F6476E01940635600C1499D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F6476D01940635600C1499D /* InfoPlist.strings */; };
 		5F6476E11940635700C1499D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F6476D21940635600C1499D /* Localizable.strings */; };
 		5F6476E41940635F00C1499D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6476E31940635F00C1499D /* ViewController.swift */; };
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F0C0EC41940C28300DDBA82 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F1EB98519406604006D12AA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5F6476A6194062FD00C1499D /* LanguageSwitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanguageSwitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F6476B8194062FD00C1499D /* LanguageSwitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageSwitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +38,6 @@
 		5F6476BE194062FD00C1499D /* LanguageSwitcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcherTests.swift; sourceTree = "<group>"; };
 		5F6476C91940633500C1499D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F6476CD1940635600C1499D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F6476CE1940635600C1499D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5F6476D11940635600C1499D /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F6476D31940635600C1499D /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F6476D41940635600C1499D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 		5F6476CB1940635600C1499D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5F0C0EC41940C28300DDBA82 /* Images.xcassets */,
 				5F6476CC1940635600C1499D /* Main.storyboard */,
-				5F6476CE1940635600C1499D /* Images.xcassets */,
 				5F6476CF1940635600C1499D /* Localization */,
 			);
 			path = Resources;
@@ -254,9 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F6476DE1940635600C1499D /* Main.storyboard in Resources */,
+				5F0C0EC51940C28300DDBA82 /* Images.xcassets in Resources */,
 				5F6476E11940635700C1499D /* Localizable.strings in Resources */,
 				5F6476E01940635600C1499D /* InfoPlist.strings in Resources */,
-				5F6476DF1940635600C1499D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/LanguageSwitcher/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -434,6 +435,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "$(SRCROOT)/LanguageSwitcher/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

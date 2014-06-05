@@ -82,7 +82,6 @@ class ViewController: UIViewController, LanguageManagerProtocol
         animateButton(self.view.viewWithTag(Resource.kButton_French),   forDelay: kButtonAnimationDelay * 4)
         animateButton(self.view.viewWithTag(Resource.kButton_German),   forDelay: kButtonAnimationDelay * 5)
         animateButton(self.view.viewWithTag(Resource.kButton_Spanish),  forDelay: kButtonAnimationDelay * 6)
-
     }
 
     //

@@ -102,11 +102,11 @@
     </scenes>
     <resources>
         <image name="CzechRepublic" width="30" height="30"/>
-        <image name="France" width="30" height="30"/>
-        <image name="Germany" width="30" height="30"/>
-        <image name="Russia" width="30" height="30"/>
-        <image name="Spain" width="30" height="30"/>
-        <image name="USA" width="30" height="30"/>
+        <image name="France" width="60" height="60"/>
+        <image name="Germany" width="60" height="60"/>
+        <image name="Russia" width="60" height="60"/>
+        <image name="Spain" width="60" height="60"/>
+        <image name="USA" width="60" height="60"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
