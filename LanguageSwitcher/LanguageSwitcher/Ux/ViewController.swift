@@ -256,8 +256,6 @@ class ViewController: UIViewController, LanguageManagerProtocol
             options: UIViewAnimationOptions.CurveEaseOut,
             animations: { () -> Void in button.frame = cachedButtonFrame },
             completion: { (Bool) -> Void in var finished = true })
-        
-        //UIView.animateWithDuration(kButtonAnimationDuration, animations: { button.frame = cachedButtonFrame })
     }
 }
 
