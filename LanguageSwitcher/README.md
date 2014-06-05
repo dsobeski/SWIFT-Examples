@@ -15,6 +15,7 @@ This sample uses the SWIFT programming language to look at how it integrates wit
 9. Overriding the init with a Storyboard decoder
 10. Creating a class (but) and deriving it from NSObject and using the init method
 11. Casting a AnyObject variable to a specific type.
+12. Example of clouses using UIView.animationWithDuration
 
 ===========================================================================
 Build/Runtime Requirements

@@ -12,6 +12,12 @@ import UIKit
 class ViewController: UIViewController, LanguageManagerProtocol
 {
     // ---------------------------------------------------------------------------------------------
+    // MARK: - Constants
+    
+    let kButtonAnimationDuration: NSTimeInterval    = 0.5
+    let kButtonAnimationDelay: NSTimeInterval       = 0.5
+    
+    // ---------------------------------------------------------------------------------------------
     // MARK: - Properties
     
     @IBOutlet var   labelHello:         UILabel
@@ -66,6 +72,17 @@ class ViewController: UIViewController, LanguageManagerProtocol
         //  Change our language to English.
         //
         appDelegate.languageManager.switchLanguage(LanguageType.English)
+        
+        //
+        //  Animate our language selection buttons to come up from the bottom of the screen.
+        //
+        animateButton(self.view.viewWithTag(Resource.kButton_English),  forDelay: kButtonAnimationDelay * 1)
+        animateButton(self.view.viewWithTag(Resource.kButton_Czech),    forDelay: kButtonAnimationDelay * 2)
+        animateButton(self.view.viewWithTag(Resource.kButton_Russian),  forDelay: kButtonAnimationDelay * 3)
+        animateButton(self.view.viewWithTag(Resource.kButton_French),   forDelay: kButtonAnimationDelay * 4)
+        animateButton(self.view.viewWithTag(Resource.kButton_German),   forDelay: kButtonAnimationDelay * 5)
+        animateButton(self.view.viewWithTag(Resource.kButton_Spanish),  forDelay: kButtonAnimationDelay * 6)
+
     }
 
     //
@@ -208,6 +225,39 @@ class ViewController: UIViewController, LanguageManagerProtocol
         //  Change our language to the appropriately selected language.
         //
         appDelegate.languageManager.switchLanguage(language)
+    }
+    
+    // ---------------------------------------------------------------------------------------------
+    // MARK: - Internal Helper Methods
+    
+    //
+    //  This mehtod is used to animate our core ui buttons from the bottom of the screen and put them
+    //  in the right place.
+    //
+    func animateButton(button: UIView, forDelay delay: NSTimeInterval)
+    {
+        //
+        //  Cache the current frame for the view.
+        //
+        let cachedButtonFrame = button.frame
+        
+        //
+        //  Compute the area below the bottom of the screen and place the view at that location.
+        //
+        button.frame = CGRectMake(button.frame.origin.x, self.view.bounds.size.height, button.frame.size.width, button.frame.size.height)
+        
+        //
+        //  Animate for a duration of 0.5 seconds and move the buttom from the bottom to its correct
+        //  location. We set the right location in the animations block simply by resetting the button's
+        //  frame location to the original location that we cached.
+        //
+        UIView.animateWithDuration(kButtonAnimationDuration,
+            delay: delay,
+            options: UIViewAnimationOptions.CurveEaseOut,
+            animations: { () -> Void in button.frame = cachedButtonFrame },
+            completion: { (Bool) -> Void in var finished = true })
+        
+        //UIView.animateWithDuration(kButtonAnimationDuration, animations: { button.frame = cachedButtonFrame })
     }
 }
 
