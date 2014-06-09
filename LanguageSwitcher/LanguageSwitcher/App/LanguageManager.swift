@@ -16,7 +16,7 @@ let kLanguageChanged = "onLanguageChanged"
 // -------------------------------------------------------------------------------------------------
 // MARK: - LanguageManager Protocol Definition
 
-protocol LanguageManagerProtocol
+@objc protocol LanguageManagerProtocol : NSObjectProtocol
 {
     func onLanguageChanged()
 }
