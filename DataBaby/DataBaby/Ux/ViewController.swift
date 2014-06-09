@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class ViewController: UIViewController
 {
     // ---------------------------------------------------------------------------------------------
@@ -32,6 +31,8 @@ class ViewController: UIViewController
         //  Call our super to fininalize initialization.
         //
         super.init(coder: decoder)
+        
+        let db:Database = Database()
     }
     
     //
