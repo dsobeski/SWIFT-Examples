@@ -49,6 +49,18 @@ enum LanguageType: Int
     }
 }
 
+//
+//  We are testing out the operator overloading in the SWIFT language. What we do here is define the
+//  new operator, in this case it is a "~". Since it is a unary operator, we add the @prefix to our
+//  function that is defining what the operation will do. We create a function that simply returns
+//  the (or calls) the objects toString method.
+//
+operator prefix ~ {}
+@prefix func ~ (object: LanguageType) -> String
+{
+    return object.toString()
+}
+
 // -------------------------------------------------------------------------------------------------
 // MARK: - Class Definition
 
@@ -61,7 +73,8 @@ class LanguageManager : NSObject
     // ---------------------------------------------------------------------------------------------
     // MARK: - Properties
     
-    var localeBundle : NSBundle = NSBundle()
+    var localeBundle: NSBundle = NSBundle()
+    var currentLanguage: LanguageType = LanguageType.English
 
     // ---------------------------------------------------------------------------------------------
     // MARK: - LanguageManager Methods
@@ -86,6 +99,11 @@ class LanguageManager : NSObject
         //
         let path = NSBundle.mainBundle().pathForResource(language.toString(), ofType: "lproj")
         self.localeBundle = NSBundle(path: path)
+        
+        //
+        //  Set the new current language.
+        //
+        self.currentLanguage = language
         
         //
         //  Fire the event to let anyone observing to know that we changed our language.

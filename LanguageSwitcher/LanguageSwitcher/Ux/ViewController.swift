@@ -20,8 +20,9 @@ class ViewController: UIViewController, LanguageManagerProtocol
     // ---------------------------------------------------------------------------------------------
     // MARK: - Properties
     
-    @IBOutlet var   labelHello:         UILabel
-    @IBOutlet var   labelGoodbye:       UILabel
+    @IBOutlet var labelHello:           UILabel
+    @IBOutlet var labelGoodbye:         UILabel
+    @IBOutlet var labelLanguageType:    UILabel
     
     // ---------------------------------------------------------------------------------------------
     // MARK: - UIViewController Method Implementation
@@ -135,6 +136,13 @@ class ViewController: UIViewController, LanguageManagerProtocol
         //
         self.labelHello.text    = appDelegate.languageManager.localizedString("STRING_HELLO")
         self.labelGoodbye.text  = appDelegate.languageManager.localizedString("STRING_GOODBYE")
+        
+        //
+        //  ILLUSTRATION: This is an illustration of using the SWIFT language operator overload
+        //  feature. Once we know what language was selected, we simply get the string value for
+        //  the selected language type and set our label (labelLanguageType) to the value.
+        //
+        self.labelLanguageType.text = ~appDelegate.languageManager.currentLanguage
     }
     
     // ---------------------------------------------------------------------------------------------
