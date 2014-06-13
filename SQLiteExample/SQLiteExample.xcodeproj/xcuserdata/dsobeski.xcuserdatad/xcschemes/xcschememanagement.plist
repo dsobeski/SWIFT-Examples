@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DataBaby.xcscheme</key>
+		<key>SQLiteExample.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5F2B3C831941A12D0064BE91</key>
+		<key>5F55FFCF194AD8DE0005A6BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5F2B3C951941A12D0064BE91</key>
+		<key>5F55FFE1194AD8DE0005A6BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

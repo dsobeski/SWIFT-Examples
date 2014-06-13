@@ -1,20 +1,22 @@
 //
-//  WatchViewController.swift
-//  DataBaby
+//  ViewController.swift
+//  SQLiteExample
 //
-//  Created by David Sobeski on 6/6/14.
+//  Created by David Sobeski on 6/12/14.
 //  Copyright (c) 2014 demo. All rights reserved.
 //
 
 import UIKit
 
-class WatchViewController: UIViewController
+class ViewController: UIViewController
 {
     // ---------------------------------------------------------------------------------------------
     // MARK: - Constants
     
     // ---------------------------------------------------------------------------------------------
     // MARK: - Properties
+    
+    @IBOutlet var labelWordCount : UILabel
     
     // ---------------------------------------------------------------------------------------------
     // MARK: - UIViewController Method Implementation
@@ -42,6 +44,30 @@ class WatchViewController: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        //
+        //  Get the number of words from our model.
+        //
+        let words: Words = Words()
+        let count = words.getCount()
+        
+        //
+        //  Set our count label to the number of words.
+        //
+        self.labelWordCount.text = "\(count)"
+        
+        //
+        //  Get the list of WordItems from our model.
+        //
+        let wordList: WordItem[] = words.getWords()
+        
+        //
+        //  Simply print them out to the console in this example.
+        //
+        for item in wordList
+        {
+            println("id: \(item.id) word: \(item.word)")
+        }
     }
     
     //
@@ -70,11 +96,6 @@ class WatchViewController: UIViewController
     // ---------------------------------------------------------------------------------------------
     // MARK: - UI Event Actions
     
-    //
-    //  The user has finished browsing the catalog, so we need to dismiss ourselves.
-    //
-    @IBAction func onDone(sender : AnyObject)
-    {
-        self.dismissModalViewControllerAnimated(true)
-    }
+    // ---------------------------------------------------------------------------------------------
+    // MARK: - Internal Helper Methods
 }

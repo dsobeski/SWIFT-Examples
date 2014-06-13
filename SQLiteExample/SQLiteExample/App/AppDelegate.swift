@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DataBaby
+//  SQLiteExample
 //
-//  Created by David Sobeski on 6/6/14.
+//  Created by David Sobeski on 6/12/14.
 //  Copyright (c) 2014 demo. All rights reserved.
 //
 
@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     // MARK: - Proroperties
     
     var window: UIWindow?
+    var dbManager: DatabaseManager!
     
     // ---------------------------------------------------------------------------------------------
     // MARK: - UIApplicationDelegate Methods
@@ -24,12 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     //
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool
     {
-        //
-        //  We would like our application to start wearing purple, so, we will give it a tint color
-        //  of purple.
-        //
-        UIView.appearance().tintColor = UIColor.purpleColor()
-        
+        dbManager = DatabaseManager()        
         return true
     }
     
@@ -81,4 +77,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
     }
 }
-

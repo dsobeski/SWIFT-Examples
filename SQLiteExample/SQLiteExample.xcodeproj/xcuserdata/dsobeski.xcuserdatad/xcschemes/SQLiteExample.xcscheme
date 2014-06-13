@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F2B3C831941A12D0064BE91"
-               BuildableName = "DataBaby.app"
-               BlueprintName = "DataBaby"
-               ReferencedContainer = "container:DataBaby.xcodeproj">
+               BlueprintIdentifier = "5F55FFCF194AD8DE0005A6BF"
+               BuildableName = "SQLiteExample.app"
+               BlueprintName = "SQLiteExample"
+               ReferencedContainer = "container:SQLiteExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F2B3C951941A12D0064BE91"
-               BuildableName = "DataBabyTests.xctest"
-               BlueprintName = "DataBabyTests"
-               ReferencedContainer = "container:DataBaby.xcodeproj">
+               BlueprintIdentifier = "5F55FFE1194AD8DE0005A6BF"
+               BuildableName = "SQLiteExampleTests.xctest"
+               BlueprintName = "SQLiteExampleTests"
+               ReferencedContainer = "container:SQLiteExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F2B3C831941A12D0064BE91"
-            BuildableName = "DataBaby.app"
-            BlueprintName = "DataBaby"
-            ReferencedContainer = "container:DataBaby.xcodeproj">
+            BlueprintIdentifier = "5F55FFCF194AD8DE0005A6BF"
+            BuildableName = "SQLiteExample.app"
+            BlueprintName = "SQLiteExample"
+            ReferencedContainer = "container:SQLiteExample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F2B3C831941A12D0064BE91"
-            BuildableName = "DataBaby.app"
-            BlueprintName = "DataBaby"
-            ReferencedContainer = "container:DataBaby.xcodeproj">
+            BlueprintIdentifier = "5F55FFCF194AD8DE0005A6BF"
+            BuildableName = "SQLiteExample.app"
+            BlueprintName = "SQLiteExample"
+            ReferencedContainer = "container:SQLiteExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F2B3C831941A12D0064BE91"
-            BuildableName = "DataBaby.app"
-            BlueprintName = "DataBaby"
-            ReferencedContainer = "container:DataBaby.xcodeproj">
+            BlueprintIdentifier = "5F55FFCF194AD8DE0005A6BF"
+            BuildableName = "SQLiteExample.app"
+            BlueprintName = "SQLiteExample"
+            ReferencedContainer = "container:SQLiteExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
