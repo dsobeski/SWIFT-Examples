@@ -28,14 +28,43 @@ class Words
     // ---------------------------------------------------------------------------------------------
     // MARK: - External Methods
     
+    //
+    //  Retrieve the number of words that we have in our model (database).
+    //
     func getCount() -> Int
     {
         return self.performCountQuery(SQLQueries.GetNumberOfWords)
     }
     
-    func getWords() -> WordItem[]
+    //
+    //  Retrieve a list of word items from our model (database).
+    //
+    func getWordItems() -> WordItem[]
     {
         return self.performQuery(SQLQueries.GetWords)
+    }
+    
+    //
+    //  Retrieve a list of words from our model (database).
+    //
+    func getWords() -> String[]
+    {
+        //
+        //  Fetch a list of all of our word items.
+        //
+        let wordItems: WordItem[] = self.getWordItems()
+        
+        //
+        //  Walk the list and just take out the words and put them in our new array of strings
+        //  (words).
+        //
+        var words: String[] = []
+        for item in wordItems
+        {
+            words.append(item.word)
+        }
+        
+        return words 
     }
     
     // ---------------------------------------------------------------------------------------------

@@ -59,14 +59,25 @@ class ViewController: UIViewController
         //
         //  Get the list of WordItems from our model.
         //
-        let wordList: WordItem[] = words.getWords()
+        let wordItems: WordItem[] = words.getWordItems()
         
         //
         //  Simply print them out to the console in this example.
         //
-        for item in wordList
+        for item in wordItems
         {
             println("id: \(item.id) word: \(item.word)")
+        }
+        
+        println("-----------------------------")
+        
+        //
+        //  In this demo, just printing out the list of words instead of the items.
+        //
+        let wordList = words.getWords()
+        for word in wordList
+        {
+            println("The word is: \(word)")
         }
     }
     
